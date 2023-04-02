@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Website Layout 1</title>
+        <style>
+        * {
+            box-sizing: border-box; 
+            }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+                
+        .headerContainer {
+            background: tomato;
+            height: 20vh;
+        }
+        
+        .mainContainer {
+            display: flex;
+            flex: 1;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+        
+        article {
+            flex: 1;
+            order: 1;
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        
+        .sideBarLeftItem, .sideBarRightItem {
+            flex: 0 0 20vw;
+        
+        }
+        
+        .sideBarLeftItem {
+            background: gold;
+            order: 2;
+        }
+        
+        .sideBarRightItem {
+            background: hotpink;
+            order: 3;
+        }
+        
+        .footerContainer {
+            background: lightgreen;
+            height: 20vh;
+        }
+        
+        .headerContainer, .footerContainer, article, .sideBarLeftItem,  .sideBarRightItem {
+            padding: 1em;
+        }
+ 
+</style>
+<body>
+  <header class='headerContainer'><h1>HEADER - Website Layout 1</h1></header>
+  <div class="mainContainer">
+    <section class="mainContentItem">
+    <article>
+        <h2>First article</h2>
+
+        <p>Passiflora, known also as the passion flowers or passion vines, is a genus of about 550 
+             species offlowering plants, the type genus of the family Passifloraceae. </p>
+    </article>
+    <article>
+        <h2>Second article</h2>
+
+        <p>Some species of Passiflora have been naturalized beyond their native ranges. For example, 
+            the blue passion flower (P. caerulea) now grows wild in Spain.[3] The purple passionfruit (P. edulis) and its yellow relative flavicarpa have been introduced in many tropical regions as commercial crops.</p>
+    </article>
+    <article>
+        <h2>Thrid article</h2>
+
+        <p>Passiflora, known also as the passion flowers or passion vines, is a genus of about 550 species of flowering plants, the type genus of the family Passifloraceae.</p>
+
+        <p>The sword-billed hummingbird (Ensifera ensifera) is a notable example: it, with its immensely elongated bill, is the sole pollinator of 37 species of high Andean Passiflora in the supersection Tacsonia.</p>
+    </article>
+    </section>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+  <footer class="footerContainer">Footer</footer>
+</body>
